@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doe com amor e receba com gratidão</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doação com Livelo</title>
 </head>
 <body>
-  <header>
-    <h1>Doe com amor e receba com gratidão</h1>
-    <p>A cada R$50 doados, ganhe 5.000 pontos Livelo!</p>
-  </header>
-  <main>
-    <section class="doacao">
-      <h2>Faça sua doação</h2>
-      <form id="donation-form">
-        <label>Nome: <input type="text" name="nome" required></label>
-        <label>Email: <input type="email" name="email" required></label>
-        <label>Valor da doação: <input type="number" name="valor" min="50" required></label>
-        <button type="submit">Doar via Pix</button>
-        <button type="button" onclick="doarCartao()">Doar via Cartão</button>
-      </form>
-      <div id="mensagem"></div>
-    </section>
-  </main>
+  <h1>Campanha Doe com amor e receba com gratidão</h1>
+  <form id="doacaoForm">
+    <input type="text" name="name" placeholder="Seu nome" required><br>
+    <input type="email" name="email" placeholder="Seu email" required><br>
+    <input type="text" name="cpf" placeholder="Seu CPF" required><br>
+    <input type="number" name="amount" placeholder="Valor da doação (em R$)" required><br>
+    <button type="submit">Doar com PIX</button>
+  </form>
+  <div id="resultado"></div>
   <script src="script.js"></script>
 </body>
 </html>
